@@ -27,7 +27,7 @@ public class MainController {
     }
 
     public void runCypress()  throws Exception{
-        ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "cd \"C:\\Users\\admin\\IdeaProjects\\automatisationProject\\src\\test\\com.neoxia.cypresstest\" && npm run test");
+        ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "cd \"C:\\Users\\admin\\IdeaProjects\\newautomatisationproject\\src\\test\\com.neoxia.cypresstest\" && npm run test");
         builder.redirectErrorStream(true);
         Process p = builder.start();
         BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
